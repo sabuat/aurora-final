@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Paragrafo() {
+export default function Paragrafo(props) {
   return (
     <div>
-      <p></p>
+      <p>{props.contenido}</p>
       <br/>
     </div>
     
