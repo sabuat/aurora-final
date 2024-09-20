@@ -6,26 +6,12 @@ import Home from './pages/Home';
 import Sobre from './pages/Sobre';
 import Loja from './pages/Loja';
 import Contato from './pages/Contato';
+import Barra from './components/Barra';
 
 function App() {
   return (
     <Router>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/sobre">Sobre</Link>
-          </li>
-          <li>
-            <Link to="/loja">Loja</Link>
-          </li>
-          <li>
-            <Link to="/contato">Contato</Link>
-          </li>
-        </ul>
-      </nav>
+     <Barra/>
 
       <Routes>
         <Route path="/" element={<Home/>} />
