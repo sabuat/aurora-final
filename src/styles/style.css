@@ -1,0 +1,20 @@
+/* General Variables */
+:root {
+  --branco-pampa: rgb(246, 249, 249);
+  --gold: #dbc07c;
+  --primario-flush: #bb1d3e;
+  --secundario-cranberry: #de5774;
+  --vinho-escuro: #342729;
+  --branco-fundo: rgb(246, 249, 249, 0.65);
+  --gold-claro: rgb(219, 192, 124, 0.45);
+
+  --fonte-titulo: "Cormorant SC", serif;
+  --fonte-paragrafo: "Marcellus", sans-serif;
+
+}
+
+
+body {
+  margin-top: 5em;
+}
+

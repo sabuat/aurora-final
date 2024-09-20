@@ -3,44 +3,45 @@ import logo from '../images/Brand/logo-barra.png'
 import cart from '../images/Brand/shopping cart.png'
 import menu from '../images/Brand/menu-aurora.png'
 import { Link } from 'react-router-dom';
+import '../styles/Barra.css'
 
 function Barra() {
   return (
     <div>
       <header>
-        <nav className="navbar bg-body-tertiary fixed-top">
-          <div id="nav-bar" className="d-flex align-items-center justify-content-between">
-            <div className="nav-item col-6 col-md-4">
+        <nav  id="barra" className="navbar justify-content-center fixed-top">
+          <div id="barra-box" className="d-flex">
+            <div id="logo" className="nav-item col-6 col-md-4">
               <a className="navbar-brand" href="/" > 
-                <img width="100%" id="logo" src={ logo} alt="Logo Aurora"/>
+                <img width="80%" id="logo" src={ logo} alt="Logo Aurora"/>
               </a>
             </div>
             {/* <!-- Links --> */}
-            <div className="navbar navbar-expand-lg d-none d-lg-block col-4" id="link-bar">
+            <div id="barra-link" className="navbar navbar-expand-lg d-none d-lg-block col-4" >
               <ul className="navbar-nav justify-content-center">
-                <li className="nav-item">
+                <li>
                   <Link to="/">Home</Link>
                 </li>
-                <li className="nav-item">
+                <li>
                   <Link to="/sobre">Sobre</Link>
                 </li>
-                <li className="nav-item">
+                <li>
                   <Link to="/loja">Loja</Link>
                 </li>
-                <li className="nav-item">
+                <li>
                   <Link to="/contato">Contato</Link>
                 </li>
               </ul>
             </div>
             {/* <!-- Icone do carrinho --> */}
-            <div className="d-flex d-none d-lg-block col-4">
-              <a className="d-flex flex-row justify-content-end">
-                <img id="cart" src={cart} alt="Carrinho Aurora"/>
+            <div id="cart" className="d-flex d-none d-lg-block col-4">
+              <a className="justify-content-end">
+                <img width="15%" id="cart" src={cart} alt="Carrinho Aurora"/>
               </a>
             </div> 
             {/* <!-- Botao do menu--> */}
             <div>
-              <button className="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <button className="navbar-toggler d-block d-lg-none justify-content-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span className="material-symbols-outlined fs-1">
                   <img src={menu} width="50%" alt="Imagem Menu"/>
                 </span>
@@ -54,16 +55,16 @@ function Barra() {
                 </div>
                 <div className="offcanvas-body text-center">
                   <ul className="navbar-nav justify-content-center">
-                    <li className="nav-item">
+                    <li>
                       <Link to="/">Home</Link>
                     </li>
-                    <li className="nav-item">
+                    <li>
                       <Link to="/sobre">Sobre</Link>
                     </li>
-                    <li className="nav-item">
+                    <li>
                       <Link to="/loja">Loja</Link>
                     </li>
-                    <li className="nav-item">
+                    <li>
                       <Link to="/contato">Contato</Link>
                     </li>
                   </ul>
