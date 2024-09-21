@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Generador from '../DB';
 
 const SPREADSHEET_ID = '1Wk_gn4xTbjZkP9Hy0KQ6jRgtpfqna7n9Yt6FwEkWwdc';
 const API_KEY = 'AIzaSyBHJLVC1Bkf1_DGwqkV0uRncaiP6k6bRfU'; // Replace with your API key
@@ -51,3 +50,4 @@ const ReadGoogleSheet = () => {
 };
 
 export default ReadGoogleSheet;
+
