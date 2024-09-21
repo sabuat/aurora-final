@@ -1,45 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const SPREADSHEET_ID = '1Wk_gn4xTbjZkP9Hy0KQ6jRgtpfqna7n9Yt6FwEkWwdc';
-const API_KEY = 'AIzaSyBHJLVC1Bkf1_DGwqkV0uRncaiP6k6bRfU'; // Replace with your API key
-const RANGE = 'Sheet1!A1:G20'; // Replace with the range you want to read
-
-const Loja = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}?key=${API_KEY}`
-        );
-
-        const rows = response.data.values;
-        if (!rows || rows.length < 2) {
-          console.error('No data found in the specified range.');
-          return;
-        }
-
-        const formattedProducts = rows.slice(1).map((row) => ({
-          codigo: row[0],
-          imagem: row[1],
-          nome: row[2],
-          descricao: row[3],
-          preco: row[4],
-          genero: row[5],
-          tipo: row[6],
-        }));
-
-        setProducts(formattedProducts); // Save the products in state
-      } catch (error) {
-        console.error('Error fetching data from Google Sheets:', error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
+const Loja = ({ products }) => {
   const truncateDescription = (desc) => {
     return desc.length > 250 ? `${desc.slice(0, 250)}...` : desc;
   };
@@ -64,13 +26,15 @@ const Loja = () => {
                 <h2 className="col mb-2">{product.codigo}</h2>
                 <p className="card-text-loja col pt-2">{truncateDescription(product.descricao)}</p>
                 <h2 className="col pb-3">{product.preco}</h2>
-                <a id="bt-gr" href="#" className="col btn">Saiba mais</a>
+                <Link to={`/product/${product.codigo}`} className="col btn">
+                  Saiba mais
+                </Link>
               </div>
             </div>
           ))}
         </div>
       ) : (
-        <p>Loading products...</p>
+        <p>Carregando Produtos...</p>
       )}
     </div>
   );
