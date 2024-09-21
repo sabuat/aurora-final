@@ -1,24 +1,25 @@
-.App {
-  text-align: center;
+@import './styles/style.css';
+
+.tit-box-2 {
+  font-size: 4rem;
+  color: var(--vinho-escuro);
+  font-family: var(--fonte-titulo);
+  align-items: center;
+  margin: 0 4vw;
+  background-color: var(--branco-fundo);
+  animation: entradaEsquerda 1s ease-in-out;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+@keyframes entradaEsquerda {
+  from {
+      opacity: 0;
+      translate: -100vw 0;
+  }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  to {
+      opacity: 1;
+      translate: 0 0;
+  }
 }
