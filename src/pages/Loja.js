@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Iframe from '../components/Iframe';
 
 const Loja = ({ products }) => {
   const truncateDescription = (desc) => {
@@ -14,13 +15,17 @@ const Loja = ({ products }) => {
           {products.map((product, index) => (
             <div key={index} className="card my-3 mx-3 col-12 col-sm-6 col-md-4">
               <div>
+                <Iframe imagen={product.imagem}/>
+              </div>
+              
+              {/* <div>
                 <img
                   src={product.imagem}
                   alt={product.nome}
                   className="col-3 my-2 w-75"
                   style={{ maxHeight: '20rem' }}
                 />
-              </div>
+              </div> */}
               <div id="card-text" className="card-body-loja p-3">
                 <h4 className="col mb-2">{product.nome}</h4>
                 <h2 className="col mb-2">{product.codigo}</h2>
