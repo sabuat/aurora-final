@@ -7,7 +7,7 @@ export default function Sobre() {
     <div class="container-fluid">
       <div id="contact-form" class="row justify-content-center">
         <div class="row justify-content-center">
-            <h1 class="display-6 my-5">Sobre nós</h1>
+            <h1 class="tit-box-2 mt-5 mb-5">Sobre nós</h1>
         </div>
         <div class="col-12 col-lg-4 animate__animated animate__fadeInRight">
             <img id="im-about-1" class="w-100" src="https://images.unsplash.com/photo-1595425959632-34f2822322ce?q=80&w=1596&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
