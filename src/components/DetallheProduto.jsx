@@ -12,14 +12,9 @@ const Detalle = ({ products }) => {
 
   return (
     <div className="container mt-5 pt-5">
-      {/* <h1>{product.nome}</h1>
-      <img src={product.imagem} alt={product.nome} className="img-fluid" />
-      <p>{product.descricao}</p>
-      <h2>Price: {product.preco}</h2> */}
       <div className="row mt-5">
         <div className="col-md-2"></div>
         <div className="col-md-4">
-          {/* <img src={product.imagem} alt={product.nome} className="img-fluid w-100" /> */}
           <Iframe2 imagen={product.imagem}/>
         </div>
         <div className="col-md-4 d-flex flex-column justify-content-center">

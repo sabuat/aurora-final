@@ -46,6 +46,10 @@
   min-height: 8rem;
 }
 
+.form {
+  font-family: var(--fonte-paragrafo);
+}
+
 @keyframes entradaEsquerda {
   from {
       opacity: 0;
