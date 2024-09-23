@@ -4,7 +4,7 @@ import parrafos from '../parrafos'
  
 export default function Sobre() {
   return (
-    <div class="container-fluid">
+    <div class="container-fluid mt-5 pt-5">
       <div id="contact-form" class="row justify-content-center">
         <div class="row justify-content-center">
             <h1 class="tit-box-2 mt-5 mb-5">Sobre nós</h1>
