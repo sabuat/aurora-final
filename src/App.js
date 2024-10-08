@@ -10,8 +10,8 @@ import axios from 'axios';
 import './App.css';
 
 const SPREADSHEET_ID = '1Wk_gn4xTbjZkP9Hy0KQ6jRgtpfqna7n9Yt6FwEkWwdc'; // Your spreadsheet ID
-const API_KEY = 'AIzaSyBHJLVC1Bkf1_DGwqkV0uRncaiP6k6bRfU'; // Your API key
-const RANGE = 'Sheet1!A1:G20'; // Your range
+const API_KEY = 'AIzaSyDQXf-qdhP5EG8kFLdZdLAUE4NE8zkQUnk'; // Your API key
+const RANGE = 'Sheet1!A1:G50'; // Your range
 
 function App() {
   const [products, setProducts] = useState([]);

@@ -1,44 +1,56 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 export default function Contato() {
+  const [nome, setNome] = useState('');
+  const [email, setEmail] = useState('');
+  const [telf, setTelf] = useState('');
+  const [mensagem, setMensagem] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const phoneNumber = '5511913586635'; // Your WhatsApp number (with country code, no + sign)
+    
+    // Construct the WhatsApp message
+    const whatsappMessage = `Nome: ${nome}%0AEmail: ${email}%0ATelefone: ${telf}%0AMensagem: ${mensagem}`;
+
+    // WhatsApp API URL
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+
+    // Redirect to WhatsApp with pre-filled message
+    window.location.href = whatsappUrl;
+  };
+
   return (
-    <div class="container-fluid  mt-5 pt-5 py-2 d-flex justify-content-center">
-        <div id="contact-form" class="col-12 col-sm-8 col-md-6">
-        <h1 class="tit-box-2 mb-5">Entre em contato</h1>
-        <form method='POST'>
+    <div className="container-fluid mt-5 pt-5 py-2 d-flex justify-content-center">
+      <div id="contact-form" className="col-12 col-sm-8 col-md-6">
+        <h1 className="tit-box-3 mb-5">Formulario de Contato</h1>
+        <form onSubmit={handleSubmit}>
+          <div className="form mb-3">
+            <label htmlFor="nome" className="form-label">Nome Completo</label>
+            <input type="text" className="form-control" id="nome" value={nome} onChange={(e) => setNome(e.target.value)} placeholder="Nome Sobrenome" required />
+          </div>
 
-            <div class="form mb-3">
-            <label for="nome" class="form-label">Nome Completo</label>
-            <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Sobrenome"/>
-            </div>
+          <div className="form mb-3">
+            <label htmlFor="email" className="form-label">Email</label>
+            <input type="email" className="form-control" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="usuario@contato.im" required />
+          </div>
 
-            <div class="form mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="usuario@contato.im"/>
-            </div>
+          <div className="form mb-3">
+            <label htmlFor="telf" className="form-label">Telefone</label>
+            <input type="text" className="form-control" id="telf" value={telf} onChange={(e) => setTelf(e.target.value)} placeholder="(11) 98765 4321" required />
+          </div>
 
-            <div class="form mb-3">
-                <label for="telf" class="form-label">Telefone</label>
-                <input type="telf" class="form-control" id="telf" name="telf" placeholder="(11) 98765 4321"/>
-            </div>
+          <div className="form mb-3">
+            <label htmlFor="mensagem" className="form-label">Mensagem</label>
+            <textarea className="form-control" id="mensagem" value={mensagem} onChange={(e) => setMensagem(e.target.value)} rows="2" placeholder="Texto" required></textarea>
+          </div>
 
-            <div class="form mb-3">
-            <label for="mensagem" class="form-label">Mensagem</label>
-            <textarea type="text" class="form-control" id="mensagem" name="mensagem" rows="2" placeholder="Texto"></textarea>
-            </div>
-
-            <div class="form form-check mb-5">
-            <input class="form-check-input" type="checkbox" value="" id="infos"/>
-            <label class="form-check-label" for="infos">
-                Acepto o envio de informações sobre ofertas e novos lançamentos
-            </label>
-            </div>
-
-            <div className="text-center">
-              <input id="btn-prod-2" name="criar" type="submit" class="btn btn-outline-dark fs-5 me-2" value="Enviar"/>
-            </div>
+          <div className="text-center">
+            <input id="btn-prod-2" type="submit" className="btn btn-outline-dark fs-6 me-2" value="Enviar mensagen" />
+          </div>
         </form>
-        </div> 
+      </div>
     </div>
-  )
+  );
 }

@@ -11,6 +11,18 @@
   animation-range: cover 0% cover 50%;
 }
 
+.tit-box-3 {
+  font-size: 3rem;
+  color: var(--vinho-escuro);
+  font-family: var(--fonte-titulo);
+  align-items: center;
+  text-align: center;
+  margin: 0 4vw;
+  animation: entradaEsquerda 1s ease-in-out;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
+}
+
 #btn-prod {
   padding: 1rem;
   background-color: var(--primario-flush);
@@ -44,6 +56,10 @@
 
 .card-text-loja {
   min-height: 8rem;
+}
+
+.prod-text-loja {
+  min-height: 4rem;
 }
 
 .form {

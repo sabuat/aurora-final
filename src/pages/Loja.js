@@ -13,17 +13,22 @@ const Loja = ({ products }) => {
       {products.length > 0 ? (
         <div className="row d-flex justify-content-center">
           {products.map((product, index) => (
-            <div key={index} className="card my-3 mx-3 col-12 col-sm-6 col-md-4">
+            <div
+              key={index}
+              className="card my-3 mx-3 col-12 col-sm-12 col-md-4 col-xl-3"
+            >
               <div className="col-3 my-2 w-75" style={{ maxHeight: '20rem' }}>
-                <Iframe imagen={product.imagem}/>
+                <Iframe imagen={product.imagem} />
               </div>
               <div id="card-text" className="card-body-loja p-3 mb-3">
-                <h2 className="col mb-2">{product.nome}</h2>
-                <h5 className="col mb-2">{product.codigo}</h5>
-                <p className="card-text-loja col pt-2">{truncateDescription(product.descricao)}</p>
-                <h2 className="col pb-3">{product.preco}</h2>
-                <Link id="btn-prod" to={`/product/${product.codigo}`} >
-                Saiba mais
+                <h3 className="col mb-2 prod-text-loja">{product.nome}</h3>
+                <h6 className="col mb-2">{product.codigo}</h6>
+                {/* <p className="card-text-loja col pt-2">
+                  {truncateDescription(product.descricao)}
+                </p> */}
+                <h3 className="col pb-3">{product.preco}</h3>
+                <Link id="btn-prod" to={`/product/${product.codigo}`}>
+                  Saiba mais
                 </Link>
               </div>
             </div>
