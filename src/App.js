@@ -52,7 +52,7 @@ function App() {
     <Router>
       <Barra />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home products={products}/>} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/loja" element={<Loja products={products} />} />
         <Route path="/contato" element={<Contato />} />
