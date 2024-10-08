@@ -20,7 +20,8 @@ const Testimonials = () => {
                   <div className="img-tit col-12 col-lg-4 pt-3 text-center">
                     <img
                       src={Michi}
-                      className="prof-img img-thumbnail w-75"
+                      id='prof-img'
+                      className="img-thumbnail w-75"
                       alt="..."
                     />
                   </div>
@@ -43,7 +44,8 @@ const Testimonials = () => {
                   <div className="img-tit col-12 col-lg-4 pt-3 text-center">
                     <img
                       src={Ada}
-                      className="prof-img img-thumbnail w-75"
+                      id='prof-img'
+                      className="img-thumbnail w-75"
                       alt="..."
                     />
                   </div>
@@ -66,7 +68,8 @@ const Testimonials = () => {
                   <div className="img-tit col-12 col-lg-4 pt-3 text-center">
                     <img
                       src={Astrid}
-                      className="prof-img img-thumbnail w-75"
+                      id='prof-img'
+                      className="img-thumbnail w-75"
                       alt="..."
                     />
                   </div>

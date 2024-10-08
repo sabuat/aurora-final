@@ -38,7 +38,26 @@ const Home = ({ products }) => {
           </div>
         </div>
       </div>
+
       <Testimonials/>
+
+      {/* Contato */}
+      <div id="contact2" class="container-fluid d-none d-md-block  text-center">
+        <div class="container">
+          <div class="cont-box col-md-8 col-lg-6">
+            <div class="row">
+              <h2 class="card-title mb-2">Receba Ofertas Personalizadas</h2>
+            </div>
+            <div class="row">
+              <p>Fique por dentro das novedades do nosso <a>Blog</a>, assim como outras trantas ofertas e novidades</p>
+            </div>
+            <div class="row">
+              <input type="email" class="col-8 my-4" id="email" name="email" placeholder="usuario@contato.im"/>
+                <button type="submit" class="btn col-3 my-4">Suscribir</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -42,3 +42,28 @@
     text-align: center; 
   }
 }
+
+/* Contacto 2 */
+
+#contact2 {
+  background-image: url('../images/Brand/fundo-contatos.jpg');
+  background-size: cover;
+}
+
+.cont-box {
+  display: inline-block;
+  margin: 3vw;
+  padding: 5vw;
+  background-color: var(--branco-pampa);
+}
+
+#contact2 button {
+  background-color: var(--primario-flush);
+  color: var(--branco-pampa);
+  border-radius: 0;
+}
+
+#contact2 h2 {
+  color: var(--primario-flush);
+  font-family: var(--fonte-titulo);
+}
