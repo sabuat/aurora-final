@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Home = ({ products }) => {
   // Log products to ensure it is being passed properly
@@ -25,12 +25,14 @@ const Home = ({ products }) => {
               <img class="img-2 img-fluid" src="https://p0.pikist.com/photos/96/901/still-life-roses-perfume-perfume-bottles-fragrance-rose-petals.jpg" alt=""/>
             </div>
             <div class="col"><p class="pt-4 p-ban-1">Algumas pessoas compram uma fragrância pela propaganda que foi feita dela, outras pelo belo frasco do produto e ainda outras escolhem a fragrância.</p></div>
-            <div class="col-10 col-sm-11 col-lg-12"><a href="/loja" class="btn" id="bt-gr">CONSULTE MAIS INFORMAÇÕES</a>
+            <div class="col-10 col-sm-11 col-lg-12">
+              <Link to='/loja' class="btn" id="bt-gr">
+              CONSULTE MAIS INFORMAÇÕES
+              </Link>
             </div>
           </div>
         </div>
-      </div>
-      
+      </div> 
     </div>
   );
 };
