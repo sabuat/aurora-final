@@ -9,9 +9,36 @@
   font-weight: 300;  
 }
 
-#im-about-1, #im-about-2 {
+#im-about-1, #im-about-2, #im-about-4 {
   padding: .5rem;
   margin-bottom: 2rem;
   border: 2px solid var(--vinho-escuro);
-  background-color: var(--branco-fundo);
+  background-color: var(--gold-claro);
+}
+
+#im-about-3 {
+  padding: .5rem;
+  margin: 2rem;
+  margin-left: 4rem;
+  border: 2px solid var(--vinho-escuro);
+  background-color: var(--gold-claro);
+}
+
+.tit-ban-2 {
+  font-size: 4rem;
+  color: var(--vinho-escuro);
+  font-family: var(--fonte-titulo);
+  align-items: center;
+}
+
+.link-test {
+  color: var(--primario-flush);
+}
+
+@media (max-width: 576px) {
+  .tit-ban-2 {
+    font-size: 2.2rem;
+    align-items: center;
+    text-align: center; 
+  }
 }

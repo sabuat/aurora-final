@@ -9,7 +9,7 @@ const Loja = ({ products }) => {
 
   return (
     <div className="container-fluid text-center mt-5 pt-5">
-      <h1 className="h1 h3-sm tit-box-2 mt-5 mb-5 text-center">Nossos Produtos</h1>
+      <h1 className="resp-h1 tit-box-2 mt-5 mb-5 text-center">Nossos Produtos</h1>
       {products.length > 0 ? (
         <div className="row d-flex justify-content-center">
           {products.map((product, index) => (

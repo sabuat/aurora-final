@@ -72,13 +72,13 @@
 
 #banner-1 {
   background-color: var(--secundario-cranberry);
-  margin-bottom: 2rem;
-  margin-top: 2.5rem;
-  padding: 7rem 4rem;
+  margin-bottom: 5vw;
+  margin-top: 5vw;
+  padding: 5vw 15vw;
 }
 
 .tit-ban-1 {
-  font-size: 4.5vw;
+  font-size: 4rem;
   color: var(--branco-pampa);
   font-family: var(--fonte-titulo);
   align-items: center;
@@ -105,13 +105,35 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.tit-ban-2 {
-  font-size: 475%;
-  color: var(--vinho-escuro);
-  font-family: var(--fonte-titulo);
-  align-items: center;
+.box-test {
+  background-color: var(--branco-pampa);
+  padding: 1vw;
+  margin: 1.5vw
 }
 
+.prof-img {
+  border-radius: 50%;
+}
+
+#card-test {
+  background-color: var(--primario-flush);
+  margin: 2vw 12vw;
+  padding: 2vw;
+  min-height: 30vw;
+}
+
+@media (max-width: 576px) {
+  .resp-h1 {
+    font-size: 1.75rem; 
+  }
+}
+
+@media (max-width: 576px) {
+  .tit-ban-1{
+    font-size: 1.75rem;
+    margin-top: 15vw;
+  }
+}
 
 @keyframes entradaEsquerda {
   from {
