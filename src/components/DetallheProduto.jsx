@@ -23,7 +23,7 @@ const Detalle = ({ products }) => {
           <p className="mb-5">{product.descricao}</p>
           <h4 className="text-muted text-center mb-3">{product.preco}</h4>
           <div className="d-flex justify-content-center mb-5">
-          <Link id="btn-prod-2" to="https://wa.me/5511986633936">
+          <Link id="btn-prod-2" to="https://wa.me/5511993201566">
             Comprar agora
           </Link>
           </div>
