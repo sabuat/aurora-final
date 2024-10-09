@@ -45,7 +45,7 @@ const Footer = () => {
           <div className="col-md-4">
             <div className="d-none d-md-block row pt-5">
               <a href="/">
-              <img className="logo-footer img-fluid" src={Dourado} alt="logo" />
+              <img className="logo-footer img-fluid" style={{ maxWidth: '12vw' }} src={Dourado} alt="logo" />
               </a>
             </div>
           </div>
