@@ -126,9 +126,11 @@
   .resp-h1 {
     font-size: 1.75rem; 
   }
-}
 
-@media (max-width: 576px) {
+  #btn-prod-2 {
+    max-width: 75%;
+  }
+
   .tit-ban-1{
     font-size: 1.75rem;
     margin-top: 15vw;
