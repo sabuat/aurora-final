@@ -1,0 +1,33 @@
+@import './style.css';
+
+#footer {
+  background-color: var(--secundario-cranberry);
+  color: var(--branco-pampa);
+}
+
+#footer-prod {
+  background-color: var(--vinho-escuro);
+  font-size: 0.9rem;
+  text-align: center;
+  padding-top: .5rem;
+}
+
+.link-bar {
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  color: var(--branco-pampa);
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.link-bar:hover {
+  text-decoration: underline;
+  color: var(--gold);
+}
+
+.logo-footer {
+  text-align: center;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  max-width: 12vw;
+}

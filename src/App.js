@@ -8,6 +8,7 @@ import Detalle from './components/DetallheProduto';
 import Barra from './components/Barra';
 import axios from 'axios';
 import './App.css';
+import Footer from './components/Footer';
 
 const SPREADSHEET_ID = '1Wk_gn4xTbjZkP9Hy0KQ6jRgtpfqna7n9Yt6FwEkWwdc'; // Your spreadsheet ID
 const API_KEY = 'AIzaSyDQXf-qdhP5EG8kFLdZdLAUE4NE8zkQUnk'; // Your API key
@@ -58,6 +59,7 @@ function App() {
         <Route path="/contato" element={<Contato />} />
         <Route path="/product/:id" element={<Detalle products={products} />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
