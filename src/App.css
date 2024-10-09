@@ -107,8 +107,8 @@
 
 .box-test {
   background-color: var(--branco-pampa);
-  padding: 1vw;
-  margin: 1.5vw;
+  padding: 2vw;
+  margin: .75rem;
 }
 
 #prof-img {
